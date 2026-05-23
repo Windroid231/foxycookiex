@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You're black? Blocked."
+    />
+    <title>FoxyCookie</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="FoxyCookie Mojave dossier">
+        <span class="brand-mark">62</span>
+        <span>
+          <strong>FoxyCookie</strong>
+          <small>Lucky 38 Dossier</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#dossier">Dossier</a>
+        <a href="#new-vegas">New Vegas</a>
+        <a href="#loadout">Loadout</a>
+        <a href="#radio">Radio</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Public Steam Intel // Switzerland // Online</p>
+            <h1 id="hero-title">FoxyCookie</h1>
+            <p class="hero-text">
+              Courier-grade profile for a New Vegas loyalist: 423 hours in the
+              Mojave, 68 achievements banked, and enough Steam mileage to make
+              the Strip lights flicker.
+            </p>
+
+            <div class="hero-metrics" aria-label="FoxyCookie quick metrics">
+              <div>
+                <span>Steam level</span>
+                <strong>62</strong>
+              </div>
+              <div>
+                <span>New Vegas</span>
+                <strong>423h</strong>
+              </div>
+              <div>
+                <span>Achievements</span>
+                <strong>4,910</strong>
+              </div>
+            </div>
+
+            <div class="hero-actions" aria-label="Profile actions">
+              <a class="button primary" href="https://steamcommunity.com/id/foxycookie/">
+                Visit Steam Profile
+              </a>
+              <a class="button ghost" href="#dossier">Open Dossier</a>
+            </div>
+          </div>
+
+          <aside class="vault-id" aria-label="FoxyCookie profile card">
+            <div class="avatar-shell">
+              <img
+                src="assets/foxycookie-avatar.jpg"
+                alt="FoxyCookie Steam avatar"
+                width="184"
+                height="184"
+              />
+              <span class="online-dot" aria-label="Currently online"></span>
+            </div>
+            <div>
+              <p class="id-label">Vault-Tec Field ID</p>
+              <h2>FoxyCookie</h2>
+              <p class="handle">steamcommunity.com/id/foxycookie</p>
+            </div>
+            <dl class="id-stats">
+              <div>
+                <dt>Level</dt>
+                <dd>62</dd>
+              </div>
+              <div>
+                <dt>Badge</dt>
+                <dd>Resistance</dd>
+              </div>
+              <div>
+                <dt>XP</dt>
+                <dd>100</dd>
+              </div>
+            </dl>
+            <p class="vault-note">
+              Classified as: New Vegas main-quest runner, collector class, screenshot archivist.
+            </p>
+          </aside>
+        </div>
+
+        <div class="ticker" aria-label="Live dossier highlights">
+          <span>211 games owned</span>
+          <span>444 screenshots</span>
+          <span>44 reviews</span>
+          <span>24.8 hours past 2 weeks</span>
+        </div>
+      </section>
+
+      <section id="dossier" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">RobCo Terminal</p>
+          <h2>Public Steam Intel</h2>
+        </div>
+
+        <div class="terminal-panel">
+          <div class="terminal-head">
+            <div class="terminal-lights" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="terminal-status">Signal stable // dossier unlocked</span>
+            <div class="mode-switch" role="group" aria-label="Visual mode">
+              <button class="mode-button active" type="button" data-theme="terminal">
+                Terminal
+              </button>
+              <button class="mode-button" type="button" data-theme="casino">
+                Casino
+              </button>
+            </div>
+          </div>
+
+          <div class="tab-list" role="tablist" aria-label="FoxyCookie profile tabs">
+            <button
+              class="terminal-tab active"
+              id="tab-profile"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-profile"
+              data-tab="profile"
+            >
+              Profile
+            </button>
+            <button
+              class="terminal-tab"
+              id="tab-game"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-game"
+              data-tab="game"
+            >
+              Favorite Game
+            </button>
+            <button
+              class="terminal-tab"
+              id="tab-activity"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-activity"
+              data-tab="activity"
+            >
+              Activity
+            </button>
+          </div>
+
+          <div class="tab-panels">
+            <article
+              class="tab-panel active"
+              id="panel-profile"
+              role="tabpanel"
+              aria-labelledby="tab-profile"
+              data-panel="profile"
+            >
+              <div class="intel-grid">
+                <div class="intel-card">
+                  <span class="card-kicker">Status</span>
+                  <strong>Currently Online</strong>
+                  <p>Level 62 with the Resistance badge and 3 profile awards.</p>
+                </div>
+                <div class="intel-card">
+                  <span class="card-kicker">Collection</span>
+                  <strong>211 Games</strong>
+                  <p>404 DLC owned, 148 wishlisted, 44 reviews logged.</p>
+                </div>
+                <div class="intel-card">
+                  <span class="card-kicker">Showcases</span>
+                  <strong>4,910 Achievements</strong>
+                  <p>11 perfect games and a 39% average completion rate.</p>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="tab-panel"
+              id="panel-game"
+              role="tabpanel"
+              aria-labelledby="tab-game"
+              data-panel="game"
+              hidden
+            >
+              <div class="favorite-game">
+                <img
+                  src="assets/new-vegas-header.jpg"
+                  alt="Fallout: New Vegas Steam header art"
+                  width="460"
+                  height="215"
+                />
+                <div>
+                  <span class="card-kicker">Favorite Game</span>
+                  <h3>Fallout: New Vegas</h3>
+                  <p>
+                    423 hours on record, 85 screenshots, 1 review, and 68 of 75
+                    achievements claimed.
+                  </p>
+                  <div class="game-tags" aria-label="New Vegas tags">
+                    <span>Lucky 38 regular</span>
+                    <span>91% achievement sync</span>
+                    <span>85 screenshots</span>
+                  </div>
+                  <div class="progress-block">
+                    <div class="progress-label">
+                      <span>Achievement Sync</span>
+                      <strong>68 / 75</strong>
+                    </div>
+                    <div class="progress-bar" aria-hidden="true">
+                      <span style="width: 91%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="tab-panel"
+              id="panel-activity"
+              role="tabpanel"
+              aria-labelledby="tab-activity"
+              data-panel="activity"
+              hidden
+            >
+              <div class="activity-list">
+                <div>
+                  <span class="card-kicker">May 1</span>
+                  <strong>Fallout: New Vegas</strong>
+                  <p>423 hours on record. Last played today.</p>
+                </div>
+                <div>
+                  <span class="card-kicker">May 1</span>
+                  <strong>Crusader Kings III</strong>
+                  <p>92 hours on record. 14 of 188 achievements.</p>
+                </div>
+                <div>
+                  <span class="card-kicker">Apr 30</span>
+                  <strong>Bloons TD 6</strong>
+                  <p>45 hours on record. 59 of 156 achievements.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="new-vegas" class="section split-section">
+        <div class="game-poster">
+          <img
+            src="assets/new-vegas-capsule.jpg"
+            alt="Fallout: New Vegas key art"
+            width="616"
+            height="353"
+          />
+        </div>
+
+        <div class="game-copy">
+          <p class="eyebrow">The Strip File</p>
+          <h2>New Vegas Is The Main Quest</h2>
+          <p>
+            The whole page leans into FoxyCookie's favorite game: sunburned
+            desert texture, casino neon, Pip-Boy green, terminal readouts, and
+            a profile layout that feels like it was pulled from a Mojave field
+            terminal.
+          </p>
+
+          <div class="special-grid" aria-label="S.P.E.C.I.A.L. styled stats">
+            <div class="special-stat" data-value="86">
+              <span>S</span>
+              <strong>Steam</strong>
+              <div class="stat-track"><i></i></div>
+            </div>
+            <div class="special-stat" data-value="91">
+              <span>P</span>
+              <strong>Progress</strong>
+              <div class="stat-track"><i></i></div>
+            </div>
+            <div class="special-stat" data-value="74">
+              <span>E</span>
+              <strong>Endurance</strong>
+              <div class="stat-track"><i></i></div>
+            </div>
+            <div class="special-stat" data-value="100">
+              <span>C</span>
+              <strong>Cookie</strong>
+              <div class="stat-track"><i></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="loadout" class="section loadout-section">
+        <div class="section-heading">
+          <p class="eyebrow">Courier Loadout</p>
+          <h2>What The Profile Carries</h2>
+        </div>
+
+        <div class="loadout-grid">
+          <article class="loadout-card">
+            <span>01</span>
+            <strong class="loadout-metric">444</strong>
+            <h3>Screenshot Hoarder</h3>
+            <p>444 screenshots overall, with 85 coming from New Vegas alone.</p>
+          </article>
+          <article class="loadout-card">
+            <span>02</span>
+            <strong class="loadout-metric">4,910</strong>
+            <h3>Completion Hunter</h3>
+            <p>4,910 achievements, 11 perfect games, 39% average completion.</p>
+          </article>
+          <article class="loadout-card">
+            <span>03</span>
+            <strong class="loadout-metric">211</strong>
+            <h3>Game Collector</h3>
+            <p>211 games owned, 404 DLC, and 148 items sitting on the wishlist.</p>
+          </article>
+          <article class="loadout-card">
+            <span>04</span>
+            <strong class="loadout-metric">24.8h</strong>
+            <h3>Recently Active</h3>
+            <p>24.8 hours played over the last two weeks on the public profile.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="radio" class="section radio-section">
+        <div class="radio-copy">
+          <p class="eyebrow">Radio New Foxy</p>
+          <h2 id="radio-title">Signal: Mojave Classic</h2>
+          <p id="radio-message">
+            Broadcasting profile stats across the wasteland. Keep the dial warm.
+          </p>
+        </div>
+
+        <div class="radio-console" aria-labelledby="radio-title">
+          <div class="frequency-readout">
+            <span>FREQ</span>
+            <strong id="frequency">62.423</strong>
+          </div>
+          <div class="radio-controls" role="group" aria-label="Radio presets">
+            <button class="radio-preset active" type="button" data-frequency="62.423" data-message="Broadcasting profile stats across the wasteland. Keep the dial warm.">
+              Mojave
+            </button>
+            <button class="radio-preset" type="button" data-frequency="68.075" data-message="Achievement channel online: 68 of 75 New Vegas achievements secured.">
+              Vault
+            </button>
+            <button class="radio-preset" type="button" data-frequency="211.404" data-message="Collector channel online: 211 games, 404 DLC, and no shortage of side quests.">
+              Strip
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Profile facts pulled from FoxyCookie's public Steam profile on May 1,
+        2026. Fallout: New Vegas imagery is from Steam CDN assets.
+      </p>
+      <a href="https://steamcommunity.com/id/foxycookie/">Steam source</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
